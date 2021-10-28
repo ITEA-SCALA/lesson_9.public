@@ -1,4 +1,4 @@
-package com.itea.task2.p06
+package com.itea.task_2.p06
 
 /**
  * Является ли список палиндромом.

@@ -1,4 +1,4 @@
-package com.itea.task2.p06
+package com.itea.task_2.p06
 
 import org.scalatest._
 import flatspec._
