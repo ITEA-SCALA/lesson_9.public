@@ -11,7 +11,7 @@ import com.itea.task1.service.HealthService
 import spray.json.DefaultJsonProtocol._
 import scala.util.Success
 
-class HealthController(service: HealthService) {
+class HealthController(implicit service: HealthService) {
   implicit val log = Logging(system, "HealthController$")
 
   val doGet: Route =
