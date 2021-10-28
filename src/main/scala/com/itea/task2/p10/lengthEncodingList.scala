@@ -1,4 +1,4 @@
-package com.itea.task_2.p10
+package com.itea.task2.p10
 
 /**
  * Кодирование длин серий списка.
@@ -12,7 +12,7 @@ object LengthEncodingList extends App {
   /*
    * 
    */
-  import com.itea.task_2.p09.DuplicatesElementsAsSublists.pack
+  import com.itea.task2.p09.DuplicatesElementsAsSublists.pack
   def encode[A](list: List[A]): List[(Int, A)] = pack(list) map { e => (e.length, e.head) }
 
   println(
