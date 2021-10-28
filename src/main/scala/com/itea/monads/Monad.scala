@@ -13,26 +13,26 @@ package com.itea.monads
  * - правая ассоциативность ( 3.2. Right Identity )
  * - и равенство            ( 3.3. Associativity )
  */
-trait Monad[T] {
-  def apply(value: T): Monad[T]
-  def flatMap[B] (f: T => Monad[B]): Monad[B]
-
-  def map[B] (f: T => B): Monad[B] =
-    flatMap{ t =>
-      new Monad[B] {
-        override def apply(value: B): Monad[B] = super.apply(value)
-        override def flatMap[U](f: B => Monad[U]): Monad[U] = super.flatMap(f)
-      }
-  }
-}
+//trait Monad[T] {
+//  def apply(value: T): Monad[T]
+//  def flatMap[B] (f: T => Monad[B]): Monad[B]
+//
+//  def map[B] (f: T => B): Monad[B] =
+//    flatMap{ t =>
+//      new Monad[B] {
+//        override def apply(value: B): Monad[B] = super.apply(value)
+//        override def flatMap[U](f: B => Monad[U]): Monad[U] = super.flatMap(f)
+//      }
+//  }
+//}
 
 //////
 
 object MonadRun extends App {
 
-  case class Maybe(value: Int) extends Monad[Int] { // в конструкторе метод apply уже определен
-    override def flatMap[B](f: Int => Monad[B]): Monad[B] = ??? //
-  }
+//  case class Maybe(value: Int) extends Monad[Int] { // в конструкторе метод apply уже определен
+//    override def flatMap[B](f: Int => Monad[B]): Monad[B] = ??? //
+//  }
 
   /*
    * если у нас есть монада и мы делаем какой-то метод
