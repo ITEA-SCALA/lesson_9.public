@@ -1,4 +1,4 @@
-package com.itea.task1.p03
+package com.itea.task2.p03
 
 /**
  * Найдите K- й элемент списка.
