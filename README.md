@@ -38,6 +38,29 @@
 
 ---
 
+1.
+Список монад
+* Option
+* List
+* State
+* IO
+* Parser
+* Generator
+* Reader
+* Writer
+* ...
+Здесь нет `Future`, при том что у `Future` есть методы map и flatMap.
+
+(Почему они монады и какие у них законы - вопрос откладываем на позже...)
+
+2.
+Partial Functions - Частичные функции
+
+3.
+Тип с дыркой   F[_]
+
+---
+
 [Ссылка на запись 9 занятия](https://us02web.zoom.us/rec/share/FVUKfWKF-H11o7QRlHZlW9jM3BqGUXMrbmVquWyEsK-yTF7qgS5JIaXtLbe7P9zc.UrnXL4VigiO9w3XE)
 
 * `Scala Docs` https://github.com/Home-SCALA2/docs
